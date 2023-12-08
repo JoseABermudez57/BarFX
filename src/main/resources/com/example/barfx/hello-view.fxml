@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:controller="com.example.barfx.controllers.HelloController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dfba69;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dfba69;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.barfx.controllers.HelloController">
    <children>
       <Group layoutX="105.0" layoutY="103.0">
          <children>
@@ -57,6 +57,6 @@
             <Font name="Bauhaus 93" size="21.0" />
          </font>
       </Label>
-      <Rectangle fx:id="receptionist" arcHeight="5.0" arcWidth="5.0" fill="#2b9748" height="44.0" layoutX="550.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+      <Rectangle fx:id="receptionist" arcHeight="5.0" arcWidth="5.0" fill="#2b9748" height="44.0" layoutX="543.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
    </children>
 </Pane>

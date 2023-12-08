@@ -1,4 +1,4 @@
-package com.example.barfx;
+package com.example.barfx.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

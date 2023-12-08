@@ -5,4 +5,6 @@ module com.example.barfx {
 
     opens com.example.barfx to javafx.fxml;
     exports com.example.barfx;
+    exports com.example.barfx.controllers;
+    opens com.example.barfx.controllers to javafx.fxml;
 }

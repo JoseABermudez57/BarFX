@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.barfx.controllers.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane fx:controller="com.example.barfx.controllers.HelloController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dfba69;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Group layoutX="105.0" layoutY="103.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d6619" height="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="391.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d6619" height="138.0" layoutX="69.0" layoutY="161.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="240.0" />
+            <Button layoutX="111.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#startSimulation" style="-fx-background-color: #a7ba59;" text="Start">
+               <font>
+                  <Font name="Bauhaus 93" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="206.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#endSimulation" style="-fx-background-color: #d55d63;" text="End">
+               <font>
+                  <Font name="Bauhaus 93" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Group>
+      <Group layoutX="229.0" layoutY="46.0">
+         <children>
+            <Rectangle fx:id="firstBartender" arcHeight="5.0" arcWidth="5.0" fill="#15395b" height="44.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+            <Rectangle fx:id="secondBartender" arcHeight="5.0" arcWidth="5.0" fill="#15395b" height="44.0" layoutX="111.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+         </children>
+      </Group>
+      <Group layoutX="105.0" layoutY="131.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="39.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="80.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="121.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="162.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="202.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="243.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="285.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="323.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="29.0" layoutX="360.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+         </children>
+      </Group>
+      <Label layoutX="247.0" layoutY="270.0" prefHeight="29.0" prefWidth="104.0" text="Simulation">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="receptionist" arcHeight="5.0" arcWidth="5.0" fill="#2b9748" height="44.0" layoutX="550.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+   </children>
+</Pane>

@@ -1,14 +1,27 @@
 package com.example.barfx.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.shape.Rectangle;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private Rectangle firstBartender;
+
+    @FXML
+    private Rectangle receptionist;
+
+    @FXML
+    private Rectangle secondBartender;
+
+    @FXML
+    void endSimulation(MouseEvent event) {
+
+    }
+
+    @FXML
+    void startSimulation(MouseEvent event) {
+
     }
 }
